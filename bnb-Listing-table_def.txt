@@ -1,0 +1,13 @@
+﻿host=localhost
+user=root
+password=tg84TLwfR3!
+db=roomDB001
+
+table	listing_test_02
+0	property_id	char	9
+1	prefecture	char	4
+2	station	char	4
+3	room_type	char	3
+4	updated_at	timestamp	
+5	created_at	timestamp DEFAULT CURRENT_TIMESTAMP 	
+
