@@ -1,0 +1,48 @@
+﻿コメント：
+このファイルは　bnb_Property_v2.4.py の init ファイルです。
+空白行によってブロックに分かれており、ここ（このブロック）はコメント用に使用されています。
+第2及び第3ブロックのデータが入力データとして読み込まれます。
+（注意：第3ブロックの最後の行の末尾に改行が入っていることを確認してください。）
+
+
+入力（ListingのIDを集めた）テーブル名	listing_test_02	_
+入力テーブルの定義ファイル名	bnb-Listing-table_def.txt	_
+*_	
+出力テーブル名のprefix	Cal_	_	
+出力テーブル名のsufix	_2	_	
+出力テーブルの定義ファイル名	bnb_Calender_table_def.txt	_	
+仮出力ファイル名	bnb_Calender_out.txt	_
+調査日数	90	_
+**
+
+
+リトライ時間	2	_
+リトライ回数	5	_
+実行ロット（一度に処理する）内のListing 数	10	_
+開始ロット	2	_	
+終了ロット	2	_	
+
+
+host=localhost
+user=root
+password=tg84TLwfR3!
+db=roomDB001
+
+
+table	calender_test_01	-
+0	u_index	char	16	
+0	property_id	char	9	
+1	target_date	char	6		
+2	day_of_week	char	1	
+3	holiday	char	1	
+4	availability	char	1
+4	min_stay	char	1	
+5	default_price	char	6		
+6	real_price	char	6		
+7	cleaning_fee	char	5		
+8	service_fee	char	5		
+9	total_charge	char	6		
+10	updated_at	timestamp			
+11	created_at	timestamp DEFAULT CURRENT_TIMESTAMP		
+
+end
